@@ -12,6 +12,11 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.mgsc.opengllearn.render.Ball;
+import com.mgsc.opengllearn.render.BallWithLight;
+import com.mgsc.opengllearn.render.Cone;
+import com.mgsc.opengllearn.render.Cube;
+import com.mgsc.opengllearn.render.Cylinder;
 import com.mgsc.opengllearn.render.Oval;
 import com.mgsc.opengllearn.render.Square;
 import com.mgsc.opengllearn.render.Triangle;
@@ -53,6 +58,11 @@ public class ChooseActivity extends AppCompatActivity {
         add("彩色三角形", TriangleColorFull.class);
         add("正方形", Square.class);
         add("圆形", Oval.class);
+        add("正方体", Cube.class);
+        add("圆锥", Cone.class);
+        add("圆柱", Cylinder.class);
+        add("球体", Ball.class);
+        add("带光源的球体", BallWithLight.class);
     }
     private void add(String showName,Class<?> clazz){
         Data data=new Data();
