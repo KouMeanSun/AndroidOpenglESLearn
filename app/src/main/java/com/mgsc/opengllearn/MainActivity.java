@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.mgsc.opengllearn.image.SGLViewActivity;
 import com.mgsc.opengllearn.render.FGLViewActivity;
 
 import java.util.ArrayList;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         mList.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
         data=new ArrayList<>();
         add("绘制形体", FGLViewActivity.class);
+        add("图片处理", SGLViewActivity.class);
         mList.setAdapter(new MenuAdapter());
     }
 
