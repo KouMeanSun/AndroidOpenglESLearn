@@ -14,6 +14,7 @@ import android.widget.Button;
 
 import com.mgsc.opengllearn.image.SGLViewActivity;
 import com.mgsc.opengllearn.render.FGLViewActivity;
+import com.mgsc.opengllearn.vary.VaryActivity;
 
 import java.util.ArrayList;
 
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         data=new ArrayList<>();
         add("绘制形体", FGLViewActivity.class);
         add("图片处理", SGLViewActivity.class);
+        add("图形变换", VaryActivity.class);
         mList.setAdapter(new MenuAdapter());
     }
 
