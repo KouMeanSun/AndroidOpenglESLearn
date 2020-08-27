@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.mgsc.opengllearn.camera.CameraActivity;
 import com.mgsc.opengllearn.image.SGLViewActivity;
 import com.mgsc.opengllearn.render.FGLViewActivity;
 import com.mgsc.opengllearn.vary.VaryActivity;
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         add("绘制形体", FGLViewActivity.class);
         add("图片处理", SGLViewActivity.class);
         add("图形变换", VaryActivity.class);
+        add("相机", CameraActivity.class);
         mList.setAdapter(new MenuAdapter());
     }
 
